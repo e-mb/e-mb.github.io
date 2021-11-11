@@ -1,0 +1,90 @@
+# Site settings
+title: Eric Müller-Budack
+email: eric.mueller@tib.eu
+url: https://github.com/jeromelachaud/freelancer-theme
+description: "Eric Müller-Budack (Computer Scientist)"
+keywords: "eric müller-budack" # separate by commas if there are more
+skills: "PhD Candidate in Computer Science"
+institute: "TIB - Leibniz Information Centre for Science and Technology"
+meta_author: Eric Müller-Budack
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 2c3e50 # 18bc9c #80B3FF
+  primary-dark: 233140
+  secondary: ffffff #FD6E8A
+  secondary-dark: dddddd #A2122F
+
+# Footer settings
+footer:
+  copyright: Eric Müller-Budack
+  location: Contact
+  social: You can also find me here
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: home
+    url: https://www.tib.eu/en/research-development/research-groups-and-labs/visual-analytics/staff/eric-mueller-budack
+  - title: twitter
+    url: https://twitter.com/eric_muebu
+  - title: github
+    url: http://github.com/e-mb
+  - title: google
+    url: https://scholar.google.com/citations?user=Ian_NPUAAAAJ&hl=de
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: eric.mueller@tib.eu
+  - line: Eric Müller-Budack
+  - line: Technische Informationsbibliothek
+  - line: Welfengarten 1 B, 30167 Hannover
+  - line: Germany
+
+# Credits content
+# credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Bibliography
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  group_by: year
+  group_order: descending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: ""
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
