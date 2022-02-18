@@ -110,6 +110,11 @@ header .intro-text .name {
     font-weight: 700;
 }
 
+header .intro-text .grad {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
@@ -123,6 +128,11 @@ header .intro-text .skills {
 
     header .intro-text .name {
         font-size: 2.5em;
+    }
+
+    header .intro-text .grad {
+        font-size: 1.75em;
+        font-weight: 600;
     }
 
     header .intro-text .skills {
