@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #{{ site.color.secondary }};
+    color: #{{ site.color.primary-light }};
 }
 
 h1,
@@ -179,7 +179,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 100px 0px 10px 0px;
 }
 
 section h2 {
@@ -188,13 +188,8 @@ section h2 {
 }
 
 section.secondary {
-    color: #{{ site.color.primary-dark }};
+    color: #{{ site.color.primary }};
     background: #{{ site.color.secondary }};
-}
-
-section.secondary-dark {
-    color: #{{ site.color.primary-dark }};
-    background: #{{ site.color.secondary-dark }};
 }
 
 @media(max-width:767px) {
@@ -233,7 +228,7 @@ section.secondary-dark {
 .btn-outline-dark {
     margin-top: 15px;
     margin-bottom: 15px;
-    border: solid 2px #{{ site.color.primary-dark }};
+    /* border: solid 2px #{{ site.color.primary-dark }}; */
     font-size: 20px;
     color: #{{ site.color.secondary }};
     background: #{{ site.color.primary }};
@@ -244,9 +239,9 @@ section.secondary-dark {
 .btn-outline-dark:focus,
 .btn-outline-dark:active,
 .btn-outline-dark.active {
-    border: solid 2px #fff;
+    /* border: solid 2px #{{ site.color.primary-dark }}; */
     color: #{{ site.color.secondary }};
-    background: #{{ site.color.primary-dark }}
+    background: #{{ site.color.primary-light }}
 }
 
 .floating-label-form-group {
@@ -314,6 +309,7 @@ footer h3 {
 }
 
 footer .footer-above {
+    margin-top: 100px;
     padding-top: 50px;
     background-color: #{{ site.color.primary }};
 }
@@ -325,6 +321,10 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #{{ site.color.primary-dark }};
+}
+
+footer a {
+    color: #{{ site.color.secondary }};
 }
 
 .btn-social {
@@ -424,8 +424,20 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
+.navbar a:active {
+    color: #{{ site.color.primary-light }} !important;
+}
+
+.navbar a:hover {
+    color: #{{ site.color.primary-light }} !important;
+}
+
+.navbar a:focus {
+    color: #{{ site.color.secondary }} !important;
+}
+
 .navbar-nav>.active>a {
-    background-color: #{{ site.color.primary-dark }} !important;
+    background-color: #{{ site.color.primary-light }} !important;
 }
 
 /* Fix modal mouse wheel issues */

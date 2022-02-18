@@ -1,10 +1,11 @@
 # Site settings
-title: Eric Müller-Budack
+title: Dr. Eric Müller-Budack
+nav-title: Eric Müller-Budack
 email: eric.mueller@tib.eu
 url: https://github.com/jeromelachaud/freelancer-theme
-description: "Eric Müller-Budack (Computer Scientist)"
+description: "Dr. Eric Müller-Budack (Computer Scientist)"
 keywords: "eric müller-budack" # separate by commas if there are more
-skills: "PhD Candidate in Computer Science"
+skills: "Postdoctoral Researcher in Computer Science"
 institute: "TIB - Leibniz Information Centre for Science and Technology"
 meta_author: Eric Müller-Budack
 
@@ -16,10 +17,10 @@ bing_verify:
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 2c3e50 # 18bc9c #80B3FF
+  primary: 2c3e50
+  primary-light: 2196F3
   primary-dark: 233140
   secondary: ffffff #FD6E8A
-  secondary-dark: dddddd #A2122F
 
 # Footer settings
 footer:
@@ -42,7 +43,7 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: eric.mueller@tib.eu
-  - line: Eric Müller-Budack
+  - line: Dr. Eric Müller-Budack
   - line: Technische Informationsbibliothek
   - line: Welfengarten 1 B, 30167 Hannover
   - line: Germany
@@ -80,11 +81,3 @@ credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-#for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ""

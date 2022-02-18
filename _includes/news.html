@@ -1,0 +1,30 @@
+ <!-- News Section -->
+    <section class="secondary" id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2 text-center">
+                    <h2>News</h2>
+                    <hr class="star-secondary">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2">
+
+                    <!-- Home Post List -->
+                    {% for post in site.posts limit : 5 %}
+                    <h4 class="post-title">{{ post.title }}</h4>
+                    <p><small class="text-muted">
+                        {{ post.date | date: '%B %d, %Y' }}
+                    </small></p>
+                    <div style="text-align: justify">
+                        {{post.content}}
+                    </div>
+                    
+                    <hr>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </section>
