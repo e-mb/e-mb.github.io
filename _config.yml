@@ -44,7 +44,7 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: eric.mueller@tib.eu
-  - line: Dr. Eric Müller-Budack
+  - line: Dr.-Ing. Eric Müller-Budack
   - line: Technische Informationsbibliothek
   - line: Welfengarten 1 B, 30167 Hannover
   - line: Germany
@@ -60,7 +60,7 @@ scholar:
   sort_by: year
   order: descending
 
-  group_by: year
+  group_by: type, year
   group_order: descending
 
   source: ./_bibliography
