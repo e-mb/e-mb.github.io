@@ -64,7 +64,7 @@ scholar:
   group_order: descending
 
   source: ./_bibliography
-  bibliography: references.bib
+  bibliography: emb.bib
   bibliography_template: ""
 
   replace_strings: true
