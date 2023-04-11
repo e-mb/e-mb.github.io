@@ -7,6 +7,8 @@
 body {
     overflow-x: hidden;
     position: absolute;
+    min-width: 100%;
+    max-width: fit-content;
 }
 
 p {
