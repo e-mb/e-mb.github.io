@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ericmb.github.io/sitemap.xml
