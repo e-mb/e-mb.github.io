@@ -2,6 +2,11 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+
+body {
+  overflow-y: scroll; /* Show scrollbars */
+}
+
 // Typography
 
 p,
@@ -302,7 +307,7 @@ blockquote {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
       i::before {
@@ -741,6 +746,11 @@ html.transition *:after {
 
 // Extra Markdown style (post Customization)
 .post {
+
+  .post-header {
+    text-align: center;
+  }
+
   .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;

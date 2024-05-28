@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+#  - eric-mb
+#  - TIB-Visual-Analytics
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - TIBHannover/GeoEstimation
+  - TIBHannover/VisE
+  - TIBHannover/cross-modal_entity_consistency
+  # - TIB-Visual-Analytics/PIIA

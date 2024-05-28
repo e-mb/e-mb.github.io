@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<!-- about.html -->
+<div class="post">
+  <header class="post-header">
+    <p><img class="img-responsive" src="assets/img/profile.png" style="height: 12rem" alt="emb-profile-pic"></p>
+
+    <div> {{ site.degree }} </div>
+    <h1 class="post-title">
+      {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+      {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+    <!-- Social -->
+    {%- if page.social %}
+    <div class="social" style="padding-bottom: 2em;">
+      <div class="contact-icons small">
+        {% include social.html %}
+      </div>
+
+      <div class="contact-note">
+        {{ site.contact_note }}
+      </div>
+
+    </div>
+    {%- endif %}
+  </header>
+
+
+
+  <article>
+
+    <div>
+      {{ content }}
+    </div>
+
+    <!-- News -->
+    <!-- {% if page.news -%}
+    <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+    {%- include news.html %}
+    {%- endif %} -->
+
+    <!-- Latest posts -->
+    {% if page.latest_posts -%}
+    <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest news</a></h2>
+    {%- include latest_posts.html %}
+    {%- endif %}
+
+    <!-- Selected papers -->
+    <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+    {%- include selected_papers.html %}
+
+
+  </article>
+
+</div>
